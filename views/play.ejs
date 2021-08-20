@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+	<!-- HTML Meta Tags -->
+	<title>Yay || Nay</title>
+	<meta name="description" content="Tired of saying yes or no repeatedly to your parent/legal guardian on the way back to school? Why not just have a website do all the work for you?">
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://yay.ornay.net/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Yay || Nay">
+	<meta property="og:description" content="Tired of saying yes or no repeatedly to your parent/legal guardian on the way back to school? Why not just have a website do all the work for you?">
+	<meta property="og:image" content="https://www.piemadd.com/files/cover_yaynay.png">
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="yay.ornay.net">
+	<meta property="twitter:url" content="https://yay.ornay.net/">
+	<meta name="twitter:title" content="Yay || Nay">
+	<meta name="twitter:description" content="Tired of saying yes or no repeatedly to your parent/legal guardian on the way back to school? Why not just have a website do all the work for you?">
+	<meta name="twitter:image" content="https://www.piemadd.com/files/cover_yaynay.png">
+
+	<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css">
+	<link rel="stylesheet" href="https://water-css-custom.piemadd.repl.co/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script defer data-domain="yay.ornay.net" src="https://plausible.io/js/plausible.js"></script>
+	<style>
+		.poop-button {
+			width: 25vh;
+			height: 25vh;
+			font-size: 70px;
+			margin-bottom: 20px;
+		}
+		.replit {
+			position: absolute;
+			background-color: rgb(17, 28, 49);
+			top: 0px;
+			right: 0px;
+			padding: 10px;
+		}
+		.replit img {
+			width: 50px;
+		}
+		h1 {
+			margin-top: 80px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="eee">
+		<div>
+			<center>
+				<h1>Yay || Nay
+				</h1>
+				<p>
+					Press 'Yes' or 'No' to have it read out to your <%= person_formatted %>.
+				</p>
+				
+				<script>
+					function yes() {
+						var yes_audio = document.getElementById("yes");
+						yes_audio.play();
+					}
+					function no() {
+						var no_audio = document.getElementById("no");
+						no_audio.play();
+					}
+				</script>
+
+				<input class="poop-button" type="button" value="Yes" onclick="yes()">
+				<input class="poop-button" type="button" value="No" onclick="no()">
+				<audio id="yes" src="/audio/<%=pitch%>/<%=person%>/yes/audio.mp3"></audio>
+				<audio id="no" src="/audio/<%=pitch%>/<%=person%>/no/audio.mp3"></audio>
+			</center>
+		</div>
+	</div>
+	<a target="_blank" href="/__repl" class="replit"><img src="https://aaa.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com/images/logo-grayscale.png">
+</body>
+
+</html>
